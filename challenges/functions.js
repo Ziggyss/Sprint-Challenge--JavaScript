@@ -37,7 +37,7 @@ function greeting(first_name, last_name){
 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
-// Explanation: 
+// Explanation: Nestedfunction is within myFunction so can access everything outside of it, like the driver of a car with tinted windows. Nested function can look outside but outsiders cannot look in.
 
 
 const external = "I'm outside the function";
