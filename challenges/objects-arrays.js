@@ -124,7 +124,7 @@ The zoo wants to display both the scientific name and the animal name in front o
 
 */
 const animalNames = [];
-zooAnimals.forEach(function(arr){
+zooAnimals.forEach((arr) => {
   animalNames.push(`Name: ${arr.animal_name}, Scientific: ${arr.scientific_name}`);   
 });
 console.log(animalNames);
@@ -146,7 +146,7 @@ console.log(lowerCase);
 The zoos are concenred about animals with a lower population count. Find out which animals have a population less than 5.
 
 */
-const lowerPopulation  = zooAnimals.filter(function (data){
+const lowerPopulation  = zooAnimals.filter((data) => {
   return data.population < 5;
 });
 console.log(lowerPopulation); 
@@ -156,7 +156,7 @@ console.log(lowerPopulation);
 The zoos need to know their total animal population across the United States.  Find the total population from all the zoos using the .reduce() method.
 
 */
-const populationTotal = zooAnimals.reduce(function (acc, data){
+const populationTotal = zooAnimals.reduce((acc, data) => {
   return acc += data.population;
 }, 0);
 console.log(populationTotal);
@@ -166,4 +166,4 @@ console.log(populationTotal);
 Stretch: If you haven't already, convert your array method callbacks into arrow functions.
 
 */
-
+//See above
