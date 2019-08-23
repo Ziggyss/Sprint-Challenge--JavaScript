@@ -7,7 +7,7 @@
   * In the body of the function return the callback with the two parameters that you created
 */
 function consume(x, y, cb){
-    cb(x, y);
+    return cb(x, y);
     
 }
 
