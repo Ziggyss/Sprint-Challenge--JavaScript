@@ -33,3 +33,12 @@
 };
 
   let cuboid = new CuboidMaker(4,5,5);
+
+  class CubeMaker extends CuboidMaker{
+
+      surfaceArea(){
+          return 6 * (this.length * this.width);
+      }
+  };
+
+  let newCube = new CubeMaker(3,3,3);
